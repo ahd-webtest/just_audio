@@ -11,7 +11,8 @@ dependencies:
   audio_service:
     git:
       url: git://github.com/ahd-webtest/audio_service.git
-      ref: master
+      path: audio_service
+      ref: main
 
 #  audio_service: ^0.18.0-beta.0
   audio_session: ^0.1.5
