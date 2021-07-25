@@ -603,7 +603,7 @@ class _PlayerAudioHandler extends BaseAudioHandler
       controls: [
         MediaControl.skipToPrevious,
         if (_playing) MediaControl.pause else MediaControl.play,
-        MediaControl.stop,
+       // MediaControl.stop,
         MediaControl.skipToNext,
       ],
       systemActions: {
