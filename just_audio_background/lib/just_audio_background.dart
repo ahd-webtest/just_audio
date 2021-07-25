@@ -611,7 +611,7 @@ class _PlayerAudioHandler extends BaseAudioHandler
         MediaAction.seekForward,
         MediaAction.seekBackward,
       },
-      androidCompactActionIndices: [0, 1],
+      androidCompactActionIndices: [0, 1, 3],
       processingState: {
         ProcessingStateMessage.idle: AudioProcessingState.idle,
         ProcessingStateMessage.loading: AudioProcessingState.loading,
