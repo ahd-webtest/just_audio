@@ -601,17 +601,17 @@ class _PlayerAudioHandler extends BaseAudioHandler
   Future<void> _broadcastState() async {
     playbackState.add(playbackState.nvalue!.copyWith(
       controls: [
-//         MediaControl.skipToPrevious,
+        MediaControl.skipToPrevious,
         if (_playing) MediaControl.pause else MediaControl.play,
 //         MediaControl.stop,
-//         MediaControl.skipToNext,
+        MediaControl.skipToNext,
       ],
       systemActions: {
         MediaAction.seek,
         MediaAction.seekForward,
         MediaAction.seekBackward,
       },
-      androidCompactActionIndices: [1],
+      androidCompactActionIndices: [0,1,2],
       processingState: {
         ProcessingStateMessage.idle: AudioProcessingState.idle,
         ProcessingStateMessage.loading: AudioProcessingState.loading,
